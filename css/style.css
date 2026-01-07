@@ -185,25 +185,42 @@ span{
     margin:2rem 0 3rem;
 }
 
+/*Certifications Section*/
+.certifications {
+    background: var(--second-bg-color);
+}
+.certifications h2 {
+    margin-bottom: 5rem;
+}
+.certifications .services-box .btn {
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
 .services h2 {
     margin-bottom: 5rem;
 }
 .services-container{
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: stretch;
     flex-wrap:wrap;
     gap:2rem;
 }
 /*disposition des differentes de div de Knowledges*/
 .services-container .services-box{
     flex: 1 1 30rem;
+    max-width: 35rem;
+    min-height: 32rem;
     background: var(--second-bg-color);
     padding: 3rem 3rem 4rem 3rem;
     border-radius: 2rem;
     text-align: center; 
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /*Transform and transition sur les div*/
 .services-container .services-box:hover{
@@ -459,6 +476,12 @@ span{
 
 .services h2 {
     margin-bottom: 3rem;
+}
+.certifications h2 {
+    margin-bottom: 3rem;
+}
+.certifications {
+    padding-bottom: 7rem;
 }
 .portfolio h2{
     margin-bottom: 3rem;
