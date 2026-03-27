@@ -1,331 +1,588 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Responsive Portfolio of Hanan</title>
+<title>Hanan Wandji | Fullstack Developer • DevOps • MLOps</title>
+<meta name="description" content="Portfolio of Hanan Wandji - Fullstack Developer, DevOps Engineer, and MLOps Specialist. AWS Certified Solutions Architect.">
 
-<!--boxicons for the menu-->
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
+<!-- Boxicons -->
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+<!-- DevIcons for Tech Stack -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-
-
-
 
 </head>
 
 <body>
-	<!--Header Design-->
+	<!-- Particle.js Background -->
+	<div id="particles-js"></div>
+
+	<!-- Header Design -->
 	<header class="header">
-		<a href="#" class="logo">Hanan Portfolio</a>
+		<a href="#" class="logo">Hanan<span>.</span>dev</a>
 
 		<i class='bx bx-menu' id="menu-icon"></i>
 
-		<!--Navigation to the section you just clicked-->
 		<nav class="navbar">
 			<a href="#home" class="active">Home</a>
-			<a href="#about" >About</a>
-			<a href="#services" >Skills</a>
-			<a href="#portfolio" >Portfolio</a>
-			<a href="#contact" >Contact</a>
-
-
+			<a href="#about">About</a>
+			<a href="#tech-stack">Tech Stack</a>
+			<a href="#services">Skills</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#certifications">Certifications</a>
+			<a href="#contact">Contact</a>
 		</nav>
 	</header>
 
-	<!--Home Section design-->
+	<!-- Home Section -->
 	<section class="home" id="home">
 		<div class="home-content">
-			<h3>Hello, It's Me</h3>
+			<h3>Hello, I'm</h3>
 			<h1>Hanan Wandji</h1>
-			<h3> And I'm a <span class="multiple-text"></span></h3>
-			<p>The essence of life is learning. So I decided to never stop learning!</p>
-				<div class="social-media">
-					<a href="https://github.com/Wdhanan"><i class='bx bxl-github'></i></a>
-					<a href="https://de.linkedin.com/in/hanan-wandji-danga-0a512020a"><i class='bx bxl-linkedin' ></i></a>
-					<a href=mailto:wdhanan03@gmail.com><i class='bx bxl-gmail' ></i></a>
-					
-				</div>
-				<a href="images/HananLebenslauf.pdf" class="btn" >Download CV</a>
+			<h3>And I'm a <span class="multiple-text"></span></h3>
+			<p>Building robust systems from code to cloud. Passionate about automation, AI, and scalable architectures.</p>
+			
+			<div class="social-media">
+				<a href="https://github.com/Wdhanan" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+				<a href="https://de.linkedin.com/in/hanan-wandji-danga-0a512020a" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+				<a href="mailto:wdhanan03@gmail.com" aria-label="Email"><i class='bx bxl-gmail'></i></a>
+				<a href="https://medium.com/@wdhanan03" target="_blank" aria-label="Medium"><i class='bx bxl-medium'></i></a>
+			</div>
+			
+			<div class="btn-group">
+				<a href="images/HananLebenslauf.pdf" class="btn" download>Download CV</a>
+				<a href="#contact" class="btn btn-outline">Let's Talk</a>
+			</div>
 		</div>
 		<div class="home-img">
-			<img src="images/Foto.jpg" alt="">
+			<img src="images/Foto.jpg" alt="Hanan Wandji - Fullstack Developer">
 		</div>
 	</section>
-	<!--About Me Section Design-->
-<section class="about" id="about">
-	<div class="about-img">
-		<img src="images/Foto.jpg" alt="">
-	</div>
-	<div class="about-content">
-		<h2 class="heading">
-			About <span>Me</span>
-		</h2>
-		<h3>Full Stack Developer / LLMops-Enthusiast !</h3>
-		<p>Hello, my name is Hanan Wandji. I am a 24-year-old Master's student in Computer Science at Hochschule Worms, specializing in Software Development and Data Analysis. My academic journey, complemented by extensive hands-on experience across multiple companies, has shaped me into a versatile and solution-driven software developer.
 
-			Currently, as a Master’s student at Satware AG, I am developing a local autonomous Multi-Agent platform (SAAP) for enterprise AI agent deployment. The project focuses on designing scalable, privacy-preserving, and resource-efficient architectures, combining Python (FastAPI/Django), Vue.js, PostgreSQL, Redis/RabbitMQ, and Docker to enable autonomous collaboration between specialized AI agents.
+	<!-- About Section -->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="images/Foto.jpg" alt="About Hanan">
+		</div>
+		<div class="about-content">
+			<h2 class="heading">
+				About <span>Me</span>
+			</h2>
+			<h3>Fullstack Developer • DevOps Engineer • MLOps Enthusiast</h3>
+			<p>
+				I'm Hanan Wandji — a Master's student in Computer Science at Hochschule Worms with hands-on experience 
+				at Satware AG, Actico GmbH, Camline GmbH, and Mercedes-Benz Bank AG.
+			</p>
+			<p>
+				My expertise spans <strong>end-to-end software development</strong>, from designing scalable APIs and 
+				microservices to building <strong>CI/CD pipelines</strong> and deploying <strong>ML models in production</strong>. 
+				I'm AWS certified and passionate about bridging the gap between development and operations.
+			</p>
+			<div class="about-stats">
+				<div class="stat-box">
+					<span class="stat-number" data-target="10">0</span>+
+					<span class="stat-label">Projects</span>
+				</div>
+				<div class="stat-box">
+					<span class="stat-number" data-target="5">0</span>+
+					<span class="stat-label">Companies</span>
+				</div>
+				<div class="stat-box">
+					<span class="stat-number" data-target="3">0</span>+
+					<span class="stat-label">Years Exp.</span>
+				</div>
+			</div>
+		</div>
+	</section>
 
-			Alongside my academic research, I work as a Working Student at Actico GmbH, where I contribute to backend development, feature implementation, and testing using Java, Spring Boot, Docker, and CI/CD pipelines.
-			Before that, at Camline GmbH, I held two impactful roles — as a Working Student, I developed an automated Jira integration interface with Python and FastAPI, and during my Bachelor thesis, I designed a Python application for data consistency checks within complex manufacturing systems, focusing on reliability and automation.
-			Earlier, I gained practical experience at Mercedes-Benz Bank AG, where I supported the implementation of a GRC data upload interface and built CI/CD pipelines with GitHub. My journey began at Pit-Cup GmbH, enhancing web technologies and automating testing workflows with Selenium IDE.
-
-			Beyond professional roles, I enjoy exploring Generative AI, data visualization, and intelligent systems. My projects include interactive medical visualization tools with Python & VTK and a web-based integration platform for newcomers in Germany, built with Angular, Java, and AI-driven chatbots.
-
-			With strong analytical thinking, a passion for clean and efficient code, and a constant drive for innovation, I thrive in dynamic environments that challenge me to grow — turning complex ideas into impactful software solutions.
-
-			— Hanan Wandji ☺
-		</p>
+	<!-- Tech Stack Section -->
+	<section class="tech-stack" id="tech-stack">
+		<h2 class="heading">Tech <span>Stack</span></h2>
+		<p class="section-subtitle">Technologies I work with daily</p>
 		
-	</div>
-</section>
+		<div class="tech-categories">
+			<!-- Languages -->
+			<div class="tech-category">
+				<h3><i class='bx bx-code-alt'></i> Languages</h3>
+				<div class="tech-icons">
+					<div class="tech-icon" data-tooltip="Python">
+						<i class="devicon-python-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Java">
+						<i class="devicon-java-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="TypeScript">
+						<i class="devicon-typescript-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="JavaScript">
+						<i class="devicon-javascript-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="SQL">
+						<i class="devicon-postgresql-plain colored"></i>
+					</div>
+				</div>
+			</div>
 
-<!--Skills Section Design-->
-<section class="services" id="services">
+			<!-- Frontend -->
+			<div class="tech-category">
+				<h3><i class='bx bx-palette'></i> Frontend</h3>
+				<div class="tech-icons">
+					<div class="tech-icon" data-tooltip="Angular">
+						<i class="devicon-angularjs-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Vue.js">
+						<i class="devicon-vuejs-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="React">
+						<i class="devicon-react-original colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="HTML5">
+						<i class="devicon-html5-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="CSS3">
+						<i class="devicon-css3-plain colored"></i>
+					</div>
+				</div>
+			</div>
 
-	<h2 class="heading">
-		My <span>Knowledges</span>
-	</h2>
-	<div class="services-container">
-		<div class="services-box">
-			<i class='bx bxl-codepen'></i>
-			<h3>Fullstack Development</h3>
-			<p>I work with Java and Python (FastAPI) for backend, using MySQL and Docker. On the frontend, I build scalable and user-friendly web applications with Angular and Vue Js.</p>
+			<!-- Backend -->
+			<div class="tech-category">
+				<h3><i class='bx bx-server'></i> Backend</h3>
+				<div class="tech-icons">
+					<div class="tech-icon" data-tooltip="Spring Boot">
+						<i class="devicon-spring-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="FastAPI">
+						<i class="devicon-fastapi-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Node.js">
+						<i class="devicon-nodejs-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Django">
+						<i class="devicon-django-plain"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- DevOps -->
+			<div class="tech-category">
+				<h3><i class='bx bx-git-branch'></i> DevOps</h3>
+				<div class="tech-icons">
+					<div class="tech-icon" data-tooltip="Docker">
+						<i class="devicon-docker-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Kubernetes">
+						<i class="devicon-kubernetes-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="GitLab CI/CD">
+						<i class="devicon-gitlab-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="GitHub Actions">
+						<i class="devicon-github-original"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Terraform">
+						<i class="devicon-terraform-plain colored"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Cloud & MLOps -->
+			<div class="tech-category">
+				<h3><i class='bx bx-cloud'></i> Cloud & MLOps</h3>
+				<div class="tech-icons">
+					<div class="tech-icon" data-tooltip="AWS">
+						<i class="devicon-amazonwebservices-original colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="TensorFlow">
+						<i class="devicon-tensorflow-original colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="PyTorch">
+						<i class="devicon-pytorch-original colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Jupyter">
+						<i class="devicon-jupyter-plain colored"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Databases -->
+			<div class="tech-category">
+				<h3><i class='bx bx-data'></i> Databases</h3>
+				<div class="tech-icons">
+					<div class="tech-icon" data-tooltip="PostgreSQL">
+						<i class="devicon-postgresql-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="MySQL">
+						<i class="devicon-mysql-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="MongoDB">
+						<i class="devicon-mongodb-plain colored"></i>
+					</div>
+					<div class="tech-icon" data-tooltip="Redis">
+						<i class="devicon-redis-plain colored"></i>
+					</div>
+				</div>
+			</div>
 		</div>
+	</section>
 
-		<div class="services-box">
-			<i class='bx bxl-sketch'></i>
-			<h3>Generative AI</h3>
-			<p>I have solid experience in integrating chatbots and AI-based image generation. My focus is on embedding these technologies seamlessly into applications to improve usability, automation, and engagement.</p>
-		</div>
-
-		<div class="services-box">
-			<i class='bx bxs-bar-chart-alt-2'></i>
-			<h3>Machine Learning</h3>
-			<p>With a strong foundation in data analysis and algorithms, I apply Python (PyTorch, scikit-learn) to build and train predictive models, focusing on real-world problem-solving and intelligent automation.</p>
-		</div>
-
+	<!-- Skills Section - 6 Cards -->
+	<section class="services" id="services">
+		<h2 class="heading">My <span>Expertise</span></h2>
+		<p class="section-subtitle">Core competencies that drive my work</p>
 		
+		<div class="services-container">
+			<!-- Fullstack Development -->
+			<div class="services-box" data-aos="fade-up">
+				<i class='bx bx-code-block'></i>
+				<h3>Fullstack Development</h3>
+				<p>End-to-end application development with Java, Python (FastAPI), Angular, and Vue.js. 
+				Building scalable REST APIs, microservices, and responsive frontends.</p>
+				<div class="skill-tags">
+					<span>Java</span><span>Python</span><span>Angular</span><span>Vue.js</span>
+				</div>
+			</div>
 
-	</div>
-</section>
+			<!-- DevOps -->
+			<div class="services-box" data-aos="fade-up" data-aos-delay="100">
+				<i class='bx bx-git-merge'></i>
+				<h3>DevOps Engineering</h3>
+				<p>Designing CI/CD pipelines, containerization with Docker, orchestration with Kubernetes, 
+				and infrastructure automation. GitLab CI, GitHub Actions, and Jenkins experience.</p>
+				<div class="skill-tags">
+					<span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>GitLab</span>
+				</div>
+			</div>
 
-<!--Portfolio section-->
+			<!-- MLOps -->
+			<div class="services-box" data-aos="fade-up" data-aos-delay="200">
+				<i class='bx bx-brain'></i>
+				<h3>MLOps & AI Engineering</h3>
+				<p>Deploying ML models to production, building data pipelines, model versioning with MLflow, 
+				and monitoring model performance. Bridging ML research and production systems.</p>
+				<div class="skill-tags">
+					<span>MLflow</span><span>TensorFlow</span><span>PyTorch</span><span>SageMaker</span>
+				</div>
+			</div>
 
-<section class="portfolio" id="portfolio">
-	<h2 class="heading">Latest <span>Project
+			<!-- Cloud Architecture -->
+			<div class="services-box" data-aos="fade-up" data-aos-delay="300">
+				<i class='bx bxs-cloud'></i>
+				<h3>Cloud Architecture</h3>
+				<p>AWS Solutions Architect certified. Designing serverless architectures, 
+				EC2, S3, Lambda, RDS, and cost-optimized cloud solutions. Infrastructure as Code with Terraform.</p>
+				<div class="skill-tags">
+					<span>AWS</span><span>Terraform</span><span>Lambda</span><span>S3</span>
+				</div>
+			</div>
 
-	</span></h2>
-	<div class="portfolio-container">
-		<div class="portfolio-box">
-			<img src="images/Pizza.png" alt="">
-			<div class="portfolio-layer">
-				<h4>Fullstack Development</h4>
-				<p>In a Group of 7 Persons we build a fullstack Web Applications using Differents Technologies
-					like Microprofile, Java , Maven, Docker, HTML-Stuff, usw.. We had 3 differents Backends
-					and i was charged to build the Backend for User login/Logout/Registration, and to do the Docker
-					Compose of the Web Application
-				</p>
-				
+			<!-- Data Engineering -->
+			<div class="services-box" data-aos="fade-up" data-aos-delay="400">
+				<i class='bx bx-data'></i>
+				<h3>Data Engineering</h3>
+				<p>Building ETL pipelines, data warehousing, and analytics solutions. 
+				Experience with Apache Spark, Kafka, and SQL/NoSQL databases for big data processing.</p>
+				<div class="skill-tags">
+					<span>ETL</span><span>Spark</span><span>Kafka</span><span>SQL</span>
+				</div>
+			</div>
+
+			<!-- Generative AI -->
+			<div class="services-box" data-aos="fade-up" data-aos-delay="500">
+				<i class='bx bx-bot'></i>
+				<h3>Generative AI</h3>
+				<p>Integrating LLMs, building chatbots, RAG systems, and AI-powered features. 
+				Prompt engineering, model fine-tuning, and OpenAI/Langchain integrations.</p>
+				<div class="skill-tags">
+					<span>LLMs</span><span>RAG</span><span>Langchain</span><span>OpenAI</span>
+				</div>
 			</div>
 		</div>
+	</section>
 
-		<div class="portfolio-box">
-			<img src="images/Portfolio.png" alt="">
-			<div class="portfolio-layer">
-				<h4>Frontend Development</h4>
-				<p>That is the current Portfolio of me where you can get to know me more and part of projects i've already
-					done.
+	<!-- Portfolio Section with Filters -->
+	<section class="portfolio" id="portfolio">
+		<h2 class="heading">Latest <span>Projects</span></h2>
+		<p class="section-subtitle">A selection of my recent work</p>
 		
-				</p>
-				
-			</div>
+		<!-- Filter Buttons -->
+		<div class="portfolio-filters">
+			<button class="filter-btn active" data-filter="all">All</button>
+			<button class="filter-btn" data-filter="fullstack">Fullstack</button>
+			<button class="filter-btn" data-filter="devops">DevOps</button>
+			<button class="filter-btn" data-filter="ml">ML/AI</button>
+			<button class="filter-btn" data-filter="data">Data</button>
 		</div>
 
-		<div class="portfolio-box">
-			<img src="images/Disease.png" alt="">
-			<div class="portfolio-layer">
-				<h4>Data Analyisis</h4>
-				<p>In a group of 2 Persons we did a  simualtion of the Propagation of a Disease in a small population
-					area of 50. We used Python and Jupyter Notebook for the Programming part, and interpretated all the results
-					with Mathematical Syntaxes
-				</p>
-				
+		<div class="portfolio-container">
+			<!-- Cybersecurity Demonstrator -->
+			<div class="portfolio-box" data-category="fullstack devops">
+				<img src="images/nuxt.jpg" alt="Cybersecurity Demonstrator">
+				<div class="portfolio-layer">
+					<span class="project-category">Fullstack • DevOps</span>
+					<h4>Cybersecurity Demonstrator</h4>
+					<p>Fraunhofer project: Web app demonstrating cybersecurity techniques with attack simulations and defense mechanisms.</p>
+					<div class="project-tech">
+						<span>Nuxt.js</span><span>Docker</span><span>CI/CD</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/Data.png" alt="">
-			<div class="portfolio-layer">
-				<h4>Data Analyisis</h4>
-				<p>
-					I visualided using RStudio the Results of a Premier league Season. Due to the fact that i'm a huge
-					football fan, it was very interesting for me to use My Mathematical and programming skills to visualize
-					that kind of Data
-				</p>
-				
+			<!-- Event Tracking App -->
+			<div class="portfolio-box" data-category="fullstack ml">
+				<img src="images/event.jpg" alt="Event Tracking App">
+				<div class="portfolio-layer">
+					<span class="project-category">Fullstack • AI</span>
+					<h4>AI Event Tracker</h4>
+					<p>Fullstack app with AI chatbot for event management, quiz generation, and smart task organization.</p>
+					<div class="project-tech">
+						<span>FastAPI</span><span>Vue.js</span><span>OpenAI</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/booking.png" alt="">
-			<div class="portfolio-layer">
-				<h4>Fullstack Development</h4>
-				<p>Here i build a single fullstack Web App using Angular, Springboot, Springsecurity and Mysql. The Angular part is using
-					Ng Zorro UI and Reactive forms. There are two modules: Company and Client modules. According to the logged in user,
-					the user can operate different activities such as booking services, add reviews, Company can see these reviews and accept/refuse a booking.
-				</p>
-				
+			<!-- Autonomous Driving -->
+			<div class="portfolio-box" data-category="ml data">
+				<img src="images/vehicles.jpg" alt="Autonomous Driving">
+				<div class="portfolio-layer">
+					<span class="project-category">ML/AI • Computer Vision</span>
+					<h4>Autonomous Driving Detection</h4>
+					<p>Object detection models using RGB and thermal images from FLIR dataset. Custom training pipeline with evaluation metrics.</p>
+					<div class="project-tech">
+						<span>PyTorch</span><span>YOLO</span><span>Python</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/Carpooling.png" alt="">
-			<div class="portfolio-layer">
-				<h4>Fullstack Development</h4>
-				<p>I did a Fullstack Web-Application for University Purposes. This is a Ride Application where Students
-					can registrate theirselves and book a ride. All the Users have the same Destination which is the University
-					and can know their Distances between theirselves before accepting or refusing a ride.
-					As Usual i used Docker, Java , Microprofile, Maven , OpenLiberty Server to build this
-					amazing Web Application
-				</p>
-				
+			<!-- Integration Search Engine -->
+			<div class="portfolio-box" data-category="fullstack ml">
+				<img src="images/integration.jpg" alt="Integration Portal">
+				<div class="portfolio-layer">
+					<span class="project-category">Fullstack • AI</span>
+					<h4>Integration Search Engine</h4>
+					<p>Search engine for integration topics in Germany with integrated AI chatbot for answering user questions.</p>
+					<div class="project-tech">
+						<span>Python</span><span>FastAPI</span><span>RAG</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/histogramm.jpg" alt="">
-			<div class="portfolio-layer">
-				<h4>interactive visualization</h4>
-				<p> interative visualization of a computed tomography scan of a human Thorax. The visualization
-					enables to draw a ROI-region to extract high level information and the density values.
-				</p>
-				
+			<!-- Booking System -->
+			<div class="portfolio-box" data-category="fullstack">
+				<img src="images/booking.png" alt="Booking System">
+				<div class="portfolio-layer">
+					<span class="project-category">Fullstack</span>
+					<h4>Service Booking Platform</h4>
+					<p>Full booking system with Angular, Spring Boot, and MySQL. Company and client modules with review system.</p>
+					<div class="project-tech">
+						<span>Angular</span><span>Spring Boot</span><span>MySQL</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/Vtk.jpg" alt="">
-			<div class="portfolio-layer">
-				<h4>Data Analysis</h4>
-				<p>Display and extraction of internal Structure of a human Thorax with a shift enabling to navigate
-					between the regions to recognize the different part.
-				</p>
-				
+			<!-- Carpooling -->
+			<div class="portfolio-box" data-category="fullstack devops">
+				<img src="images/Carpooling.png" alt="Carpooling App">
+				<div class="portfolio-layer">
+					<span class="project-category">Fullstack • DevOps</span>
+					<h4>University Carpooling</h4>
+					<p>Ride-sharing app for students with Docker containerization, distance calculation, and user management.</p>
+					<div class="project-tech">
+						<span>Java</span><span>Docker</span><span>MicroProfile</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/integration.jpg" alt="">
-			<div class="portfolio-layer">
-				<h4>Fullstack Development</h4>
-				<p>
-					Search engine for all the topic concerning Integration in Germany for foreigners. A chatbot is being integrated
-					to the Website to answer all possible questions from the users.
-				</p>
-				
+			<!-- Pizza Team Project -->
+			<div class="portfolio-box" data-category="fullstack devops">
+				<img src="images/Pizza.png" alt="Pizza Ordering">
+				<div class="portfolio-layer">
+					<span class="project-category">Fullstack • DevOps</span>
+					<h4>Microservices Pizza App</h4>
+					<p>Team project with 3 microservices. Led user authentication backend and Docker Compose orchestration.</p>
+					<div class="project-tech">
+						<span>Java</span><span>Docker Compose</span><span>Maven</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/event.jpg" alt="">
-			<div class="portfolio-layer">
-				<h4>Event tracking App</h4>
-				<p>Entwicklung einer Fullstack-Webanwendung zur Verwaltung 
-				von Events und Aufgaben mit KI-Unterstützung. Die 
-				Anwendung ermöglicht Benutzern, persönliche und geteilte 
-				Aktivitäten zu organisieren, Fortschritte durch Quizze zu 
-				überprüfen und Daten im CSV-Format zu 
-				importieren/exportieren. Ein integrierter KI-Chatbot unterstützt 
-				bei der Generierung von Lernfragen und der Bewertung von 
-				Antworten. 
-				</p>
-				
+			<!-- Medical Visualization -->
+			<div class="portfolio-box" data-category="data">
+				<img src="images/histogramm.jpg" alt="Medical Visualization">
+				<div class="portfolio-layer">
+					<span class="project-category">Data Visualization</span>
+					<h4>CT Scan Visualization</h4>
+					<p>Interactive visualization of CT thorax scans with ROI extraction and density value analysis.</p>
+					<div class="project-tech">
+						<span>Python</span><span>VTK</span><span>Medical Imaging</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/vehicles.jpg" alt="">
-			<div class="portfolio-layer">
-				<h4>Erkennung von Klassen beim Autonomes Fahren</h4>
-				<p>Entwicklung und Evaluation von Objektdetektionsmodellen für autonomes Fahren unter
-					 Verwendung von RGB- und Thermalbildern. Das Projekt konzentriert sich auf die Nutzung
-					  des FLIR-Datensatzes, inklusive der Verarbeitung von JSON-basierten Bounding 
-					  Box-Annotationen. Es umfasst die selbstständige Zusammenstellung von disjunkten Trainings-, Validierungs- 
-					und Testdatensätzen sowie die Implementierung und Visualisierung von Bounding Boxen.
-				</p>
-				
+			<!-- VTK Project -->
+			<div class="portfolio-box" data-category="data">
+				<img src="images/Vtk.jpg" alt="VTK Visualization">
+				<div class="portfolio-layer">
+					<span class="project-category">Data Visualization</span>
+					<h4>3D Thorax Explorer</h4>
+					<p>Internal structure display with slider navigation for exploring different thorax regions.</p>
+					<div class="project-tech">
+						<span>Python</span><span>VTK</span><span>NumPy</span>
+					</div>
+				</div>
 			</div>
-		</div>
 
-		<div class="portfolio-box">
-			<img src="images/nuxt.jpg" alt="">
-			<div class="portfolio-layer">
-				<h4>Cybersecurity Demonstrator für Fraunhofer</h4>
-				<p>Entwicklung einer Webanwendung zur Demonstration von Cybersecurity-Techniken. 
-					Die Anwendung ermöglicht die Simulation von Angriffen und Verteidigungsmaßnahmen, 
-					um das Bewusstsein für Sicherheitsrisiken zu schärfen. Sie umfasst Funktionen wie 
-					Benutzeranmeldung, Angriffssimulationen und Sicherheitsanalysen.
-				</p>
-				
+			<!-- Disease Simulation -->
+			<div class="portfolio-box" data-category="data ml">
+				<img src="images/Disease.png" alt="Disease Simulation">
+				<div class="portfolio-layer">
+					<span class="project-category">Data Science</span>
+					<h4>Disease Propagation Model</h4>
+					<p>Simulation of disease spread in a population using mathematical modeling and Python.</p>
+					<div class="project-tech">
+						<span>Python</span><span>Jupyter</span><span>NumPy</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Football Data -->
+			<div class="portfolio-box" data-category="data">
+				<img src="images/Data.png" alt="Football Analytics">
+				<div class="portfolio-layer">
+					<span class="project-category">Data Analysis</span>
+					<h4>Premier League Analytics</h4>
+					<p>Statistical analysis and visualization of Premier League season data using R Studio.</p>
+					<div class="project-tech">
+						<span>R</span><span>ggplot2</span><span>Statistics</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Portfolio -->
+			<div class="portfolio-box" data-category="fullstack">
+				<img src="images/Portfolio.png" alt="Portfolio Website">
+				<div class="portfolio-layer">
+					<span class="project-category">Frontend</span>
+					<h4>Personal Portfolio</h4>
+					<p>This responsive portfolio showcasing my projects and skills with modern animations.</p>
+					<div class="project-tech">
+						<span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+					</div>
+				</div>
 			</div>
 		</div>
+	</section>
+
+	<!-- Certifications Section -->
+	<section class="certifications" id="certifications">
+		<h2 class="heading">My <span>Certifications</span></h2>
+		<p class="section-subtitle">Professional credentials and achievements</p>
 		
-		
-		
-	</div>
-</section>
-<!--Contact section Design-->
+		<div class="services-container">
+			<div class="services-box certification-box">
+				<i class='bx bxl-aws'></i>
+				<h3>AWS Solutions Architect</h3>
+				<p>Certified AWS Solutions Architect with expertise in designing scalable and resilient cloud architectures.</p>
+				<a href="images/aws-certificate.pdf" class="btn" target="_blank">View Certificate</a>
+			</div>
 
-<section class="contact" id="contact">
-	<h2 class="heading"> Contact <span>Me!</span></h2>
+			<div class="services-box certification-box">
+				<i class='bx bxs-file-doc'></i>
+				<h3>Professional References</h3>
+				<p>Recommendations from Satware AG, Actico GmbH, Camline GmbH, and Mercedes-Benz Bank AG.</p>
+				<a href="images/references.pdf" class="btn" target="_blank">View References</a>
+			</div>
 
-	<!--formspree  Website to submit the Informations the user Wrote to me-->
-	
-	<form action="https://formspree.io/f/mwkjarjp" method="POST">
-		<div class="input-box">
-			<input type="text" name="Name" placeholder="Full  Name">
-			<input type="email" name="Email" placeholder="Email  Address">
+			<div class="services-box certification-box">
+				<i class='bx bxs-graduation'></i>
+				<h3>Academic Transcript</h3>
+				<p>Master's in Computer Science at Hochschule Worms. Strong foundation in algorithms and systems.</p>
+				<a href="images/notenspiegel.pdf" class="btn" target="_blank">View Transcript</a>
+			</div>
 		</div>
-		<div class="input-box">
-			<input type="number" name="Number" placeholder="Mobile Number">
-			<input type="text" name="Subject" placeholder="Email  Subject">
+	</section>
+
+	<!-- GitHub Activity Widget -->
+	<section class="github-activity" id="github">
+		<h2 class="heading">GitHub <span>Activity</span></h2>
+		<p class="section-subtitle">My open source contributions</p>
+		
+		<div class="github-stats">
+			<img src="https://github-readme-stats.vercel.app/api?username=Wdhanan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1f242d" alt="GitHub Stats">
+			<img src="https://github-readme-streak-stats.herokuapp.com/?user=Wdhanan&theme=tokyonight&hide_border=true&background=1f242d" alt="GitHub Streak">
 		</div>
-		<textarea name="Message" id="" cols ="30" rows="10" placeholder="Your Message"></textarea>
-		<button type="submit"  class="btn">Send Message</button>
-	</form>
-</section>
+	</section>
 
-<!--Footer Design-->
-<footer class="footer">
-	<div class="footer-text">
-		<p>Copyright &copy; 2025 by Hanan | All rights reserved.</p>
-	</div>
+	<!-- Contact Section -->
+	<section class="contact" id="contact">
+		<h2 class="heading">Get In <span>Touch</span></h2>
+		<p class="section-subtitle">Let's build something amazing together</p>
 
-	<div class="footer-iconTop">
-		<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-	</div>
-</footer>
-<!--scroll reveal-- ScrollRevealjs.org-->
+		<form action="https://formspree.io/f/mwkjarjp" method="POST">
+			<div class="input-box">
+				<input type="text" name="Name" placeholder="Your Name" required>
+				<input type="email" name="Email" placeholder="Your Email" required>
+			</div>
+			<div class="input-box">
+				<input type="text" name="Company" placeholder="Company (optional)">
+				<input type="text" name="Subject" placeholder="Subject">
+			</div>
+			<textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+			<button type="submit" class="btn">
+				<i class='bx bx-send'></i> Send Message
+			</button>
+		</form>
+	</section>
 
-<script src="https://unpkg.com/scrollreveal"></script>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-logo">
+				<h3>Hanan<span>.</span>dev</h3>
+				<p>Building the future, one commit at a time.</p>
+			</div>
+			<div class="footer-links">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#services">Skills</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<div class="footer-social">
+				<a href="https://github.com/Wdhanan" target="_blank"><i class='bx bxl-github'></i></a>
+				<a href="https://de.linkedin.com/in/hanan-wandji-danga-0a512020a" target="_blank"><i class='bx bxl-linkedin'></i></a>
+				<a href="mailto:wdhanan03@gmail.com"><i class='bx bxl-gmail'></i></a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>© 2026 Hanan Wandji. All rights reserved.</p>
+		</div>
+		<div class="footer-iconTop">
+			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</footer>
 
-<!--Typed Javascript: github.com/mattbold/typed.js-->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<!-- Scripts -->
+	<!-- Particles.js for background -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	ORM
+	<!-- ScrollReveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
 
+	<!-- Typed.js -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+	<!-- Main Script -->
 	<script src="js/script.js"></script>
-
-		
-
-		
 
 </body>
 
